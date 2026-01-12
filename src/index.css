@@ -817,8 +817,8 @@ html {
     top: 70px;
     left: 0;
     width: 100%;
-    background: var(--bg-card);
-    backdrop-filter: blur(20px);
+    background: var(--bg-color);
+    backdrop-filter: none;
     flex-direction: column;
     padding: 2rem;
     gap: 1.5rem;
@@ -920,4 +920,12 @@ html {
 [data-theme='light'] .nav-links button:hover,
 [data-theme='light'] .nav-links button.active {
   color: var(--primary-color);
+}
+
+.nav-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
 }

@@ -111,7 +111,7 @@ function App() {
                 className="navbar"
             >
                 <div className="logo-container">
-                    <div className="logo-box">MS</div>
+                    <img src="/profile.png" alt="MS" className="nav-profile-img" />
                     <span className="logo-text">Mohamed Shaduli</span>
                 </div>
 
@@ -232,7 +232,7 @@ function App() {
                             </p>
                             <br />
                             <p>
-                                Currently innovating at <b>Meridian IT Solutions</b>. I focus on **performance optimization** and **architectural excellence**, ensuring every app I build is not just functional, but a **masterpiece of engineering**.
+                                Currently innovating at <b>Meridian IT Solutions</b>. I focus on <b>performance optimization</b> and <b>architectural excellence</b>, ensuring every app I build is not just functional, but a <b>masterpiece of engineering</b>.
                             </p>
                         </motion.div>
                     </div>
@@ -349,16 +349,23 @@ function App() {
                     <div className="projects-showcase">
                         {[
                             {
+                                title: 'RAG Connect',
+                                tags: ['Productivity', 'Task Management'],
+                                desc: 'A centralized productivity suite for effortless Lead & Task Management, featuring smart calendars and visual workflow planning.',
+                                image: '/rag-connect-logo.png',
+                                color: '#580c2b' // Deep Maroon
+                            },
+                            {
                                 title: 'HiLite Clique',
                                 tags: ['CRM'],
-                                desc: 'A powerhouse CRM with offline caching and smart vehicle scanning capabilities.',
+                                desc: 'A powerhouse CRM featuring Lead & Task Management, Sales Tracking, and smart vehicle scanning.',
                                 image: '/hilite-logo.png',
                                 color: '#D4AF37' // Gold accent
                             },
                             {
                                 title: 'Food Street',
                                 tags: ['E-commerce', 'Real-time'],
-                                desc: 'Seamless food ordering with live tracking updates via OneSignal integration.',
+                                desc: 'Seamless food ordering platform with multi-outlet management and OneSignal integration.',
                                 image: '/foodstreet-logo.png',
                                 color: '#ea580c' // Orange accent
                             },
