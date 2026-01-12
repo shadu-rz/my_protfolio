@@ -351,17 +351,23 @@ function App() {
                             {
                                 title: 'HiLite CRM App',
                                 tags: ['CRM', 'OCR Scanning'],
-                                desc: 'A powerhouse CRM with offline caching and smart vehicle scanning capabilities.'
+                                desc: 'A powerhouse CRM with offline caching and smart vehicle scanning capabilities.',
+                                image: '/hilite-logo.png',
+                                color: '#D4AF37' // Gold accent
                             },
                             {
                                 title: 'Food Delivery App',
                                 tags: ['E-commerce', 'Real-time'],
-                                desc: 'Seamless food ordering with live tracking updates via OneSignal integration.'
+                                desc: 'Seamless food ordering with live tracking updates via OneSignal integration.',
+                                image: '/foodstreet-logo.png',
+                                color: '#ea580c' // Orange accent
                             },
                             {
                                 title: 'Edunex CRM & Student',
                                 tags: ['Education', 'Payments'],
-                                desc: 'Comprehensive educational platform with video classes and Razorpay payments.'
+                                desc: 'Comprehensive educational platform with video classes and Razorpay payments.',
+                                image: '/edunex-logo.png',
+                                color: '#10b981' // Green accent
                             }
                         ].map((project, index) => (
                             <motion.div
@@ -374,6 +380,15 @@ function App() {
                                 transition={{ delay: index * 0.1 }}
                             >
                                 <div className="project-frame">
+                                    {/* Project Background Image */}
+                                    <div
+                                        className="project-bg-img"
+                                        style={{
+                                            backgroundImage: `url(${project.image})`,
+                                            backgroundColor: index === 0 ? '#0a1d35' : (index === 1 ? '#c2410c' : '#f0fdf4') // Fallback/Tint colors
+                                        }}
+                                    />
+
                                     <div className="project-overlay"></div>
                                     <div className="project-info">
                                         <h3>{project.title}</h3>
