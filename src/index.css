@@ -716,6 +716,10 @@ html {
   z-index: -1;
 }
 
+[data-theme='light'] .project-overlay {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.85) 60%, rgba(255, 255, 255, 0.95) 100%);
+}
+
 /* Background Decorations */
 .bg-decoration {
   position: fixed;
