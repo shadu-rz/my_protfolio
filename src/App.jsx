@@ -349,21 +349,21 @@ function App() {
                     <div className="projects-showcase">
                         {[
                             {
-                                title: 'HiLite CRM App',
-                                tags: ['CRM', 'OCR Scanning'],
+                                title: 'HiLite Clique',
+                                tags: ['CRM'],
                                 desc: 'A powerhouse CRM with offline caching and smart vehicle scanning capabilities.',
                                 image: '/hilite-logo.png',
                                 color: '#D4AF37' // Gold accent
                             },
                             {
-                                title: 'Food Delivery App',
+                                title: 'Food Street',
                                 tags: ['E-commerce', 'Real-time'],
                                 desc: 'Seamless food ordering with live tracking updates via OneSignal integration.',
                                 image: '/foodstreet-logo.png',
                                 color: '#ea580c' // Orange accent
                             },
                             {
-                                title: 'Edunex CRM & Student',
+                                title: 'Edunex CRM & Student App',
                                 tags: ['Education', 'Payments'],
                                 desc: 'Comprehensive educational platform with video classes and Razorpay payments.',
                                 image: '/edunex-logo.png',
