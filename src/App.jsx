@@ -446,7 +446,7 @@ function App() {
                             <a href="https://linkedin.com/in/mohamed-shaduli" target="_blank" className="contact-pill">
                                 <Linkedin size={20} /> LinkedIn
                             </a>
-                            <a href="https://github.com" target="_blank" className="contact-pill">
+                            <a href="https://github.com/shadu-rz" target="_blank" className="contact-pill">
                                 <Github size={20} /> GitHub
                             </a>
                         </div>
@@ -460,5 +460,6 @@ function App() {
         </div>
     );
 }
-
+//test
+//test
 export default App;
