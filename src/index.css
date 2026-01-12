@@ -753,7 +753,110 @@ html {
 /* Update Nav Actions for Responsive */
 
 /* Update Nav Actions for Responsive */
+/* Mobile Responsiveness & "Safe" Layout */
 @media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+    /* Slightly smaller for better fit */
+    padding: 0 10px;
+    /* Prevent text hitting edges */
+  }
+
+  /* Fix Image Spacing on Mobile */
+  .profile-img-container {
+    margin-top: 7.5rem;
+    /* Increased to fully clear the sticky navbar */
+    margin-bottom: 2rem;
+    width: 140px;
+    /* Slightly smaller on mobile */
+    height: 140px;
+    border: 3px solid var(--secondary-color);
+    /* Visible border */
+    flex-shrink: 0;
+    /* Prevent squeezing */
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links button {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .section {
+    padding: 3rem 1rem;
+    /* Better spacing, not too wide */
+  }
+
+  /* Ensure cards don't overflow */
+  .skills-grid {
+    grid-template-columns: 1fr;
+    /* Stack vertically on mobile */
+  }
+
+  .about-card,
+  .edu-box,
+  .contact-card {
+    padding: 1.5rem;
+    /* More breathing room for text */
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 0 1rem;
+    line-height: 1.8;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+
+  /* Timeline Mobile Fixes */
+  .timeline-container::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    justify-content: flex-start;
+    padding-left: 50px;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .timeline-content {
+    width: 100%;
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: 11px;
+  }
+
+  /* Mobile Menu Button */
   .mobile-menu-btn {
     display: flex !important;
     background: none;
@@ -763,25 +866,16 @@ html {
     margin-left: 1rem;
     z-index: 1001;
   }
-
-  /* Fix Image Spacing on Mobile */
-  .profile-img-container {
-    margin-top: 3rem;
-    /* Add space from top */
-    margin-bottom: 1.5rem;
-  }
 }
 
-/* Fix Description Text Readability in Light Mode */
+/* Specific fix for light mode description on mobile */
 [data-theme='light'] .description {
-  color: #4b5563;
-  /* Darker gray for better contrast */
+  color: #374151;
   font-weight: 500;
 }
 
 [data-theme='light'] .navbar {
-  background: rgba(255, 255, 255, 0.85);
-  /* More opaque for readability */
+  background: rgba(255, 255, 255, 0.9);
 }
 
 [data-theme='light'] .nav-links button {
