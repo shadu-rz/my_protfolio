@@ -111,7 +111,7 @@ function App() {
                 className="navbar"
             >
                 <div className="logo-container">
-                    <img src="/profile.png" alt="MS" className="nav-profile-img" />
+                    <img src="/profile.png" alt="Mohamed Shaduli Logo" className="nav-profile-img" />
                     <span className="logo-text">Mohamed Shaduli</span>
                 </div>
 
@@ -155,7 +155,7 @@ function App() {
                     variants={staggerContainer}
                 >
                     <motion.div variants={popIn} className="profile-img-container">
-                        <img src="/profile.png" alt="Mohamed Shaduli" className="profile-img" />
+                        <img src="/profile.png" alt="Mohamed Shaduli (Shadu) Profile Picture" className="profile-img" />
                     </motion.div>
 
                     <motion.div variants={fadeIn} className="greeting-pill">
@@ -228,7 +228,7 @@ function App() {
                         >
                             <p>
                                 A passionate <b>Flutter Developer</b> with 2+ years of experience crafting high-performance apps.
-                                I don't just write code; I architect solutions using <b>Clean Architecture</b> and <b>SOLID principles</b>.
+                                I am <b>Mohamed Shaduli</b>, also known as <b>Shadu</b>, and I don't just write code; I architect solutions using <b>Clean Architecture</b> and <b>SOLID principles</b>.
                             </p>
                             <br />
                             <p>
@@ -390,6 +390,8 @@ function App() {
                                     {/* Project Background Image */}
                                     <div
                                         className="project-bg-img"
+                                        role="img"
+                                        aria-label={`${project.title} - Project by Mohamed Shaduli (Shadu)`}
                                         style={{
                                             backgroundImage: `url(${project.image})`,
                                             backgroundColor: index === 0 ? '#0a1d35' : (index === 1 ? '#c2410c' : '#f0fdf4') // Fallback/Tint colors
