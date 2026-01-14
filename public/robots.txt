@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mohamedshaduli.com/sitemap.xml
+Sitemap: https://shadu-dev.netlify.app/sitemap.xml
