@@ -210,6 +210,7 @@ html {
   padding: 0 5%;
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .hero-background-shapes .shape {
@@ -656,17 +657,20 @@ html {
   }
 
   .section {
-    padding: 4rem 1.5rem;
+    padding: 4rem 1rem;
     /* Reduce padding on mobile */
   }
 
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    min-height: auto;
+    /* Prevent vertical stretching/zoom feel */
   }
 
-  .projects-showcase {
-    grid-template-columns: 1fr;
+  .hero-content h1 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
   }
 }
 
@@ -799,16 +803,12 @@ html {
 
   /* Fix Image Spacing on Mobile */
   .profile-img-container {
-    margin-top: 7.5rem;
-    /* Increased to fully clear the sticky navbar */
-    margin-bottom: 2rem;
-    width: 140px;
-    /* Slightly smaller on mobile */
-    height: 140px;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+    width: 120px;
+    height: 120px;
     border: 3px solid var(--secondary-color);
-    /* Visible border */
     flex-shrink: 0;
-    /* Prevent squeezing */
   }
 
   .nav-links {
@@ -857,9 +857,10 @@ html {
   }
 
   .description {
-    font-size: 1rem;
-    padding: 0 1rem;
-    line-height: 1.8;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
   }
 
   .hero-buttons {
